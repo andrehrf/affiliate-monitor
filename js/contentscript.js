@@ -548,8 +548,8 @@ function AffiliateCookie(cookie, cookies){
             catch(e){}
         break;
         case "ips-casasbahia":
-        case "ips-pontofrio":
-        case "ips-extra":
+        case "ips-pontofrio.com":
+        case "ips-extra.com":
             var affiliate = getQuery(cookie.value, "Parceiro");
             
             switch(affiliate.toLowerCase()){
