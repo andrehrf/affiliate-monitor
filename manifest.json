@@ -1,0 +1,32 @@
+{
+    "name": "Affiliate Monitor",
+    "description": "Extension of sales attribution tracking via affiliation",
+    "version": "2.0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": {"19": "img/icon.png", "38": "img/icon.png"},
+        "default_title": "Affiliate Monitor"
+    },
+    "background": {"persistent": false, "scripts": ["js/background.js"]},
+    "content_scripts": [{
+        "js": ["js/jquery-3.1.1.min.js", "js/mustache.js", "js/moment.js", "js/contentscript.js"],
+        "css": [],
+        "matches": ["*://*/*"]
+    }],
+    "web_accessible_resources": [
+       "img/*",
+       "tpl/*",
+       "fonts/*"
+    ],
+    "icons": {"16": "img/icon.png", "128": "img/icon.png"},
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "notifications",
+        "storage",        
+        "activeTab",
+        "cookies",
+        "http://*/*", 
+        "https://*/*"
+    ]
+}

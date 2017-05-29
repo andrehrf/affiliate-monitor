@@ -1,0 +1,205 @@
+<style>
+    .afcmBox{
+        color: #666;
+        border-bottom: 1px solid #FAFAFA;
+        font-family: arial !important;
+        font-size: 12px !important;
+        text-align: left;
+        display: none;
+    }
+    
+    .afcmHeader{
+        background-color: #FAFAFA;
+        border-bottom: 1px solid #FAFAFA;
+        padding: 10px;
+        font-family: arial !important;
+        font-size: 15px !important;
+    }
+    
+    .afcmContents{
+        padding: 10px;
+    }
+    
+    .afcmContents div{
+        margin-bottom: 5px
+    }
+    
+    .injectionPixel{
+        display: none;
+    }
+</style>
+<div class="afcmBox" style="display: block">
+    <div class="afcmContents" style="text-align:center">
+        <h4 style="font-size: 12px; font-weight: bold; margin: 5px">Affiliate Monitor</h4>
+    </div>
+</div>
+
+<div class="afcmBox" id="actionpay">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=actionpay.net" /> Actionpay
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="actionpayTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="actionpayID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="actionpayExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="afiliados">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=afiliados.com.br" /> Afiliados B2W
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="afiliadosTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="afiliadosID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="afiliadosExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="afilio">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=afilio.com.br" /> Afilio
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="afilioTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="afilioID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="afilioExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="cityads">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=cityads.com" /> Cityads
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="cityadsTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="cityadsID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="cityadsExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="indexa">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=admin.indexanetwork.com" /> Indexa Network
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="indexaTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="indexaID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="indexaExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="lomadee">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=lomadee.com" /> Lomadee
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="lomadeeTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="lomadeeID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="lomadeeExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="rakuten">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=rakuten.com" /> Rakuten
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="rakutenTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="rakutenID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="rakutenExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="weach">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=weach.net" /> Weach
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="weachTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="weachID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="weachExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="zanox">
+    <div class="afcmHeader" style="font-size: 12px;">
+        <img src="https://www.google.com/s2/favicons?domain=zanox.com" /> Zanox
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="zanoxTracking">Não</span> </div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="zanoxID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="zanoxExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="outer">
+    <div class="afcmHeader" style="font-size: 12px;">
+        Outros programas
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;">Tracking ativo: <span id="outerTracking">Não</span> </div>
+        <div style="font-size: 12px;">Nome do afiliado: <span id="outerAffname"></span></div>
+        <div style="font-size: 12px;">ID do parceiro: <span id="outerID"></span></div>
+        <div style="font-size: 12px; display: none">Expiração: <span id="outerExpiration"></span></div>
+    </div>
+</div>
+
+<div class="afcmBox" id="empty">
+    <div class="afcmContents">
+        Nenhum tracking foi detectado!
+    </div>
+</div>
+
+<div class="afcmBox" style="display: block">
+    <div class="afcmHeader" style="font-size: 12px;">
+        Scripts
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelGoogleTagManager"><a href="https://www.google.com.br/tagmanager/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=https://www.google.com.br/tagmanager/" /> Google Tag Manager </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelFacebook"><a href="https://www.facebook.com/business/help/651294705016616" target="_blank"><img src="https://www.google.com/s2/favicons?domain=facebook.com" /> Pixel Facebook </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelUolTagManager"><a href="http://cliques.uol.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=uol.com.br" /> Uol Tag Manager </a></div>
+        
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelSocialMiner"><a href="http://socialminer.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=socialminer.com" /> Social Miner </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelChaordic"><a href="https://www.chaordic.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=chaordic.com.br" /> Chaordic </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelShopback"><a href="https://www.shopback.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=shopback.com.br" /> Shopback </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelTrustvox"><a href="http://site.trustvox.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=http://site.trustvox.com.br/" /> Trustvox </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelBoostbox"><a href="https://www.boostbox.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=boostbox.com.br" /> Boostbox </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelBiggyLabs"><a href="https://www.chaordic.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=biggylabs.com" /> BiggyLabs </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelNeemu"><a href="http://www.voxus.tv/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=chaordic.com.br" /> Neemu </a></div>        
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelCriteo"><a href="http://www.criteo.com/br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=criteo.com" /> Criteo </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelMouseFlow"><a href="https://mouseflow.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=mouseflow.com" /> MouseFlow </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelCrazyEgg"><a href="https://www.crazyegg.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=crazyegg.com" /> CrazyEgg </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelPercycle"><a href="http://www.percycle.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=percycle.com" /> Percycle </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelBTG360"><a href="http://www.btg360.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=btg360.com" /> BTG360 </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelCurtiVendi"><a href="https://www.fulllab.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=fulllab.com.br" /> Curti Vendi </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelInspectlet"><a href="http://www.inspectlet.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=inspectlet.com" /> Inspectlet </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelSmartlook"><a href="https://www.smartlook.com/pt/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=smartlook.com" /> Smartlook </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelMediaMath"><a href="http://www.mediamath.com/pt/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=mediamath.com" /> MediaMath </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelPerfectAudienceRetargeting"><a href="http://www.perfectaudience.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=perfectaudience.com" /> PerfectAudience Retargeting </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelHotjar"><a href="https://www.hotjar.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=hotjar.com" /> Hotjar </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelVeInteractive"><a href="https://www.veinteractive.com/br" target="_blank"><img src="https://www.google.com/s2/favicons?domain=veinteractive.com" /> Ve Interactive </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelNavegg"><a href="http://www.navegg.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=navdmp.com" /> Navegg </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelVorus"><a href="http://www.voxus.tv/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=voxus.tv" /> Vorus</a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelAkna"><a href="http://www.akna.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=akna.com" /> Akna </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelMediaPostCommunication"><a href="http://www.mediapostcommunication.fr/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=http://www.mediapostcommunication.fr/" /> MediaPost Communication </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelAdschoom"><a href="http://www.adschoom.com/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=adschoom.com" /> Adschoom Retargeting </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelYourviews"><a href="http://www.yourviews.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=yourviews.com.br" /> Yourviews </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelHariken"><a href="http://hariken.co/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=http://hariken.co/" /> Hariken </a></div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelPensebig"><a href="https://www.pensebig.com.br/" target="_blank"><img src="https://www.google.com/s2/favicons?domain=https://www.pensebig.com.br/" /> Pensebig </a></div>
+    </div>
+</div>
+
+<div class="afcmBox" style="display: block">
+    <div class="afcmHeader" style="font-size: 12px;">
+        Pixel
+    </div>
+    <div class="afcmContents">
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelActionpay"><img src="https://www.google.com/s2/favicons?domain=actionpay.net" /> Actionpay </div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelAfilio"><img src="https://www.google.com/s2/favicons?domain=afilio.com.br" /> Afilio </div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelCityads"><img src="https://www.google.com/s2/favicons?domain=cityads.com" /> Cityads </div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelEffiliation"><img src="https://www.google.com/s2/favicons?domain=efiliacao.com.br" /> Effiliation </div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelTimeone"><img src="https://www.google.com/s2/favicons?domain=http://performance.timeonegroup.com/br/index/" /> Timeone </div>
+        <div style="font-size: 12px;" class="injectionPixel" id="injectionPixelZanox"><img src="https://www.google.com/s2/favicons?domain=zanox.com" /> Zanox </div>
+    </div>
+</div>
